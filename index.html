@@ -6,10 +6,10 @@
     <title>My PHP Site</title>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            // Gửi yêu cầu đến data.php khi trang được tải
-            fetch('data.php')
+            // Gửi yêu cầu đến notify.php khi trang được tải
+            fetch('notify.php')
                 .then(response => response.text())
-                .then(data => console.log(data))
+                .then(data => console.log('Notification sent:', data))
                 .catch(error => console.error('Error:', error));
         });
     </script>
